@@ -1,6 +1,6 @@
 Jerry大大的 Python 網頁製作課
 =
-## 從 :zero: 開始的 Q&A
+## 從 0 開始的 Q&A
 
 ### 環境篇
 
@@ -38,7 +38,7 @@ Jerry大大的 Python 網頁製作課
     開啟你的終端機 輸入 `jupyter notebook` 就可以囉
     
 ---
-## 從 :zero: 開始的錯誤解決辦法
+## 從 0 開始的錯誤解決辦法
 
 ### Windows Ver
 
