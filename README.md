@@ -4,8 +4,9 @@ Jerry大大的 Python 網頁製作課
 0. 請問 Python 在哪下載並安裝? How to download and install Python?
 
     [**Windows**](https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe) <- 左鍵單擊
+    
     [**Mac OS X**](https://www.python.org/downloads/mac-osx/) <- 左鍵單擊
-    > 用執行檔安裝時 記得將 **Add Python to PATH** 打勾[color=#EB0]
+    > 用執行檔安裝時 記得將 **Add Python to PATH** 打勾
 
     **Liunx**
     * 通常已經預載好了 usually pre-installed
