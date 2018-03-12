@@ -1,4 +1,5 @@
 # Jerry大大的Python課 Homework
-=
 
-## 呵呵
+## Q&A
+Q1.請問Python哪裏下載?
+A1.
