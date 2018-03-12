@@ -1,6 +1,7 @@
 Jerry大大的 Python 網頁製作課
 =
 ## 從 :zero: 開始的 Q&A
+
 0. 請問 Python 在哪下載並安裝? How to download and install Python?
 
     [**Windows**](https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe) <- 左鍵單擊
@@ -17,9 +18,11 @@ Jerry大大的 Python 網頁製作課
     在**終端機(Terminal)** 下 `python -V` 可以查看 Python 的版本有顯示 Python 之類的版本資訊表示安裝正確
     
     > 終端機(Terminal)開啟方式:
-    > 　**Windows** : <i class="fa fa-windows"></i> **+ R** 輸入並執行 **cmd**
-    >　**Mac** : **CMD**&#8984; **+ Space** 開啟 SpotLight Search 輸入並執行 **Terminal**
-    >　**Linux** : **Ctrl + Alt + T**
+    > >　**Windows** : <i class="fa fa-windows"></i> **+ R** 輸入並執行 **cmd**
+    > >
+    > > **Mac** : **CMD**&#8984; **+ Space** 開啟 SpotLight Search 輸入並執行 **Terminal**
+    > >
+    > > **Linux** : **Ctrl + Alt + T**
 
 1. 請問 **jupyter** 怎麼下載並安裝? How to download and install **jupyer**?
     
