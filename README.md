@@ -16,7 +16,7 @@ Jerry大大的 Python 網頁製作課
     * *Ubuntu:* `sudo apt-get install python3.6` (Linux 大部分都是這個指令)
     * *Fedora:* `sudo yum install python3.6`
 
-    ### 安裝完之後 測試你的 **Python**  Test your **Python**
+    #### 安裝完之後 測試你的 **Python**  Test your **Python**
     在**終端機(Terminal)** 下 `python -V` 可以查看 Python 的版本有顯示 Python 之類的版本資訊表示安裝正確
     
     > 終端機(Terminal)開啟方式:
@@ -74,18 +74,27 @@ Jerry大大的 Python 網頁製作課
 
     * 方法1 : Python 砍掉重裝
         
-        1. 按下**Win** <i class="fa fa-windows"></i> **+ R** 輸入並執行 **control**
+        1. 按下 **Win** <i class="fa fa-windows"></i> **+ R** 輸入並執行 **control**
         2. 點擊 **程式集** 下的 **解除安裝程式**
         3. 找到你的 **Python** 並**解除安裝**
         4. 按照[環境篇](#環境篇)的安裝步驟重新安裝程式
         5. 如果還是遇到同樣的問題 可以請教 [Google大神](#https://www.google.com.tw/search?rlz=1C1CHZL_zh-TWTW736TW736&ei=10umWvCFFMOz0ASh4Kq4Ag&q=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&oq=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&gs_l=psy-ab.3..33i160k1.668.668.0.862.1.1.0.0.0.0.190.190.0j1.1.0....0...1.1.64.psy-ab..0.1.189....0.ayz9xPlUrbI) 或是 [助教](https://www.facebook.com/messages/t/ShengFong.f/)
 
-2. `尚未建立`
+2. `Traceback (most recent call last):  File  ~\appdata\local\programs\python\python36\lib\site-packages\pip\compat\__init__.py", line 75, in console_to_str return s.decode(sys.__stdout__.encoding) UnicodeDecodeError: 'utf-8' codec can't decode byte~`
 
     > 原因 : Windows 預設編碼問題
     
-    * 方法1 : 尚未建立
+    * 方法1 :
+    
+        1. 目錄中的 **\_\_init\_\_.py** 檔案打開
+        2. 搜尋 `sys.__stdout__.encoding`
+        3. 將 `sys.__stdout__.encoding` 替代成 `ISO-8859-1` 
+        4. 再次安裝 **jupyter**
 
+        > 如果安裝完成之後 **jupyter** 沒辦法正常開啟
+        > 
+        > 請執行 `pip uninstall jupyter` 後再安裝一次
+        
 * 其他問題
 
     * 方法1 : 
