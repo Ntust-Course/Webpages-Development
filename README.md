@@ -2,6 +2,8 @@ Jerry大大的 Python 網頁製作課
 =
 ## 從 :zero: 開始的 Q&A
 
+### 環境篇
+
 0. 請問 Python 在哪下載並安裝? How to download and install Python?
 
     [**Windows**](https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe) <- 左鍵單擊
@@ -19,9 +21,9 @@ Jerry大大的 Python 網頁製作課
     
     > 終端機(Terminal)開啟方式:
     > 
-    > >　**Windows** : <i class="fa fa-windows"></i> **+ R** 輸入並執行 **cmd**
+    > > **Windows** : **Win** <i class="fa fa-windows"></i> **+ R** 輸入並執行 **cmd**
     > >
-    > > **Mac** : **CMD**&#8984; **+ Space** 開啟 SpotLight Search 輸入並執行 **Terminal**
+    > > **Mac** : **CMD** &#8984; **+ Space** 開啟 SpotLight Search 輸入並執行 **Terminal**
     > >
     > > **Linux** : **Ctrl + Alt + T**
 
@@ -29,7 +31,7 @@ Jerry大大的 Python 網頁製作課
     
     在你的 **終端機(Terminal)** 中 執行 `pip install {package}` <- 這裡的 `{package}` 就是 `jupyter`
     
-    最後有出現 **Sucessful** 的字樣並且可以繼續輸入 指令就代表成功囉!
+    最後有出現 **Sucessful** 的字樣並且可以繼續輸入指令就代表成功囉!
     
 2. 請問我安裝好了 **jupyter** 之後要怎麼開啟呢?
 
@@ -37,7 +39,9 @@ Jerry大大的 Python 網頁製作課
     
 ---
 ## 從 :zero: 開始的錯誤解決辦法
+
 ### Windows Ver
+
 0. `'Python' 不是內部或外部命令、可執行的程式或批次檔。`
     
     > 原因 : **環境變數(Environment Variables)** 尚未設置
@@ -56,10 +60,10 @@ Jerry大大的 Python 網頁製作課
         2. 點擊 **modify**
         3. 將 **Add Python to PATH** 打勾
 
-
-
 ### Mac Ver
+
 等待你的建立
 
 ### Linux Ver
+
 等待你的建立
