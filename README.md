@@ -82,7 +82,7 @@ Jerry大大的 Python 網頁製作課
 
 2. `Traceback (most recent call last):  File  ~\appdata\local\programs\python\python36\lib\site-packages\pip\compat\__init__.py", line 75, in console_to_str return s.decode(sys.__stdout__.encoding) UnicodeDecodeError: 'utf-8' codec can't decode byte~`
 
-    > 原因 : Windows 預設編碼問題
+    > 原因 : Windows 系統編碼問題
     
     * 方法1 :
     
