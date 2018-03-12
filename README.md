@@ -18,6 +18,7 @@ Jerry大大的 Python 網頁製作課
     在**終端機(Terminal)** 下 `python -V` 可以查看 Python 的版本有顯示 Python 之類的版本資訊表示安裝正確
     
     > 終端機(Terminal)開啟方式:
+    > 
     > >　**Windows** : <i class="fa fa-windows"></i> **+ R** 輸入並執行 **cmd**
     > >
     > > **Mac** : **CMD**&#8984; **+ Space** 開啟 SpotLight Search 輸入並執行 **Terminal**
@@ -41,15 +42,16 @@ Jerry大大的 Python 網頁製作課
     
     > 原因 : **環境變數(Environment Variables)** 尚未設置
     * 方法1 : 手動新增環境變數
-    
+
         1. 右鍵單擊 **我的電腦** 或 **本機**
-        2. 點擊 **內容**
-        3. 單擊側面板中的 **進階系統設置**
-        4. 點擊 **環境變數**
-        5. 在 **系統變數** 找到 **Path** 並按下編輯
-        6. 新增你 **Python 安裝的路徑**
+        2. 點擊 **內容**
+        3. 單擊側面板中的 **進階系統設置**
+        4. 點擊 **環境變數**
+        5. 在 **系統變數** 找到 **Path** 並按下編輯
+        6. 新增你 **Python 安裝的路徑**
+
     * 方法2 : 用 Python 安裝檔新增環境變數
-    
+
         1. 點擊 **你的Python 安裝檔**
         2. 點擊 **modify**
         3. 將 **Add Python to PATH** 打勾
