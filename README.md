@@ -78,7 +78,7 @@ Jerry大大的 Python 網頁製作課
         2. 點擊 **程式集** 下的 **解除安裝程式**
         3. 找到你的 **Python** 並**解除安裝**
         4. 按照[環境篇](#環境篇)的安裝步驟重新安裝程式
-        5. 如果還是遇到同樣的問題 可以請教 [Google大神](#https://www.google.com.tw/search?rlz=1C1CHZL_zh-TWTW736TW736&ei=10umWvCFFMOz0ASh4Kq4Ag&q=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&oq=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&gs_l=psy-ab.3..33i160k1.668.668.0.862.1.1.0.0.0.0.190.190.0j1.1.0....0...1.1.64.psy-ab..0.1.189....0.ayz9xPlUrbI) 或是 [助教](https://www.facebook.com/messages/t/ShengFong.f/)
+        5. 如果還是遇到同樣的問題 可以請教 [Google大神](https://www.google.com.tw/search?rlz=1C1CHZL_zh-TWTW736TW736&ei=10umWvCFFMOz0ASh4Kq4Ag&q=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&oq=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&gs_l=psy-ab.3..33i160k1.668.668.0.862.1.1.0.0.0.0.190.190.0j1.1.0....0...1.1.64.psy-ab..0.1.189....0.ayz9xPlUrbI) 或是 [助教](https://www.facebook.com/messages/t/ShengFong.f/)
 
 2. `Traceback (most recent call last):  File  ~\appdata\local\programs\python\python36\lib\site-packages\pip\compat\__init__.py", line 75, in console_to_str return s.decode(sys.__stdout__.encoding) UnicodeDecodeError: 'utf-8' codec can't decode byte~`
 
