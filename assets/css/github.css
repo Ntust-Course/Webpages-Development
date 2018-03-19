@@ -36,9 +36,8 @@ body {
   border: 2px solid white;
   box-shadow: 0 0 0 10px rgba(0,0,0,0.9);
   color: white;
-  margin: 0 1vw 0 1vw;
+  margin: 0 2vw 0 2vw;
   border-radius: 2vw;
-  /*padding: 0vw 2vw 0vw 2vw;*/
   overflow-x:hidden;
   overflow-y:scroll;
   -webkit-overflow-scrolling: touch;
