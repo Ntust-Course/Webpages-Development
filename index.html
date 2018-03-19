@@ -6,7 +6,6 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="apple-touch-icon-precomposed" href="favicon.png">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
-    <script src="assets/js/search.js"></script>
     <title>Jerry大大的 Python 網頁製作課</title>
   </head>
   <body>
@@ -19,18 +18,16 @@
     	<h1>Python<br>網頁製作課</h1>
     	<div class="content"></div>
     	<ul class="menu">
-    		<li title="作業查詢"><a data-target="search" target="_self" href="javascript:alert('comming soon...');"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+    		<li title="作業查詢"><a data-target="search" target="_self" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
     		<li title="健康檢查"><a data-target="help" target="_self" href="help.html"><i class="fa fa-question" aria-hidden="true"></i></a></li>
 			<li title="加入我們"><a data-target="join" target="_self" href="javascript:alert('comming soon...'"><i class="fa fa-sign-in"></i></a></li>
     		<li title="救助我們"><a data-target="donate" target="_self" href="javascript:alert('comming soon...'"><i class="fa fa-dollar"></i></a></li>
     	</ul>
-    	<div id="article" style="display: none;">
-    		<article id="search"></article>
-    		<article id="help">
-    			<iframe src="help.html"></iframe>
-    		</article>
+    	<div id="#test" hidden>
+            學號:<input type="text" name="key">
+
     	</div>
     </div>
-
+    <script src="assets/js/search.js"></script>
   </body>
 </html>
