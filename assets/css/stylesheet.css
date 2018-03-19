@@ -53,6 +53,8 @@ h1 {
   letter-spacing: calc(2px + 0.5vw);
   text-align: center;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 img#head {
@@ -72,7 +74,7 @@ ul {
 }
 ul li{
   list-style: none;
-  font-size: 35px;
+  font-size: calc(200% + 1vw);
   
 }
 li a {
