@@ -1,173 +1,243 @@
 <!doctype html>
 <html lang="zh-tw">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="apple-touch-icon-precomposed" href="favicon.png">
-    <link rel="stylesheet" href="assets/css/github.css">
-    
-    <title>Jerry大大的 Python 網頁製作課</title>
-  </head>
-  <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <div id="main">
-    	<article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-jerry大大的-python-網頁製作課" class="anchor" aria-hidden="true" href="#jerry大大的-python-網頁製作課"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Jerry大大的 Python 網頁製作課</h1>
-<h2><a id="user-content-從-0-開始的-qa" class="anchor" aria-hidden="true" href="#從-0-開始的-qa"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>從 0 開始的 Q&amp;A</h2>
-<h3><a id="user-content-環境篇" class="anchor" aria-hidden="true" href="#環境篇"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>環境篇</h3>
-<ol start="0">
-<li>
-<p>請問 Python 在哪下載並安裝? How to download and install Python?</p>
-<p><a href="https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe" rel="nofollow"><strong>Windows</strong></a> &lt;- 左鍵單擊</p>
-<p><a href="https://www.python.org/downloads/mac-osx/" rel="nofollow"><strong>Mac OS X</strong></a> &lt;- 左鍵單擊</p>
-<blockquote>
-<p>用執行檔安裝時 記得將 <strong>Add Python to PATH</strong> 打勾</p>
-</blockquote>
-<p><strong>Liunx</strong></p>
-<ul>
-<li>通常已經預載好了 usually pre-installed</li>
-<li><em>Ubuntu:</em> <code>sudo apt-get install python3.6</code> (Linux 大部分都是這個指令)</li>
-<li><em>Fedora:</em> <code>sudo yum install python3.6</code></li>
-</ul>
-<h4><a id="user-content-安裝完之後-測試你的-python--test-your-python" class="anchor" aria-hidden="true" href="#安裝完之後-測試你的-python--test-your-python"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>安裝完之後 測試你的 <strong>Python</strong>  Test your <strong>Python</strong></h4>
-<p>在<strong>終端機(Terminal)</strong> 下 <code>python -V</code> 可以查看 Python 的版本有顯示 Python 之類的版本資訊表示安裝正確</p>
-<blockquote>
-<p>終端機(Terminal)開啟方式:</p>
-<blockquote>
-<p><strong>Windows</strong> : <strong>Win</strong> <i></i> <strong>+ R</strong> 輸入並執行 <strong>cmd</strong></p>
-<p><strong>Mac</strong> : <strong>CMD</strong> ⌘ <strong>+ Space</strong> 開啟 SpotLight Search 輸入並執行 <strong>Terminal</strong></p>
-<p><strong>Linux</strong> : <strong>Ctrl + Alt + T</strong></p>
-</blockquote>
-</blockquote>
-</li>
-<li>
-<p>請問 <strong>jupyter</strong> 怎麼下載並安裝? How to download and install <strong>jupyer</strong>?</p>
-<p>在你的 <strong>終端機(Terminal)</strong> 中 執行 <code>pip install {package}</code> &lt;- 這裡的 <code>{package}</code> 就是 <code>jupyter</code></p>
-<p>最後有出現 <strong>Sucessful</strong> 的字樣並且可以繼續輸入指令就代表成功囉!</p>
-</li>
-<li>
-<p>請問我安裝好了 <strong>jupyter</strong> 之後要怎麼開啟呢?</p>
-<p>開啟你的終端機 輸入 <code>jupyter notebook</code> 就可以囉</p>
-</li>
-</ol>
-<hr>
-<h2><a id="user-content-從-0-開始的錯誤解決辦法" class="anchor" aria-hidden="true" href="#從-0-開始的錯誤解決辦法"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>從 0 開始的錯誤解決辦法</h2>
-<h3><a id="user-content-windows-ver" class="anchor" aria-hidden="true" href="#windows-ver"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Windows Ver</h3>
-<ol start="0">
-<li>
-<p><code>'Python' 不是內部或外部命令、可執行的程式或批次檔。</code></p>
-<blockquote>
-<p>原因 : <strong>環境變數(Environment Variables)</strong> 尚未設置</p>
-</blockquote>
-<ul>
-<li>
-<p>方法1 : 手動新增環境變數</p>
-<ol>
-<li>右鍵單擊 <strong>我的電腦</strong> 或 <strong>本機</strong></li>
-<li>點擊 <strong>內容</strong></li>
-<li>單擊側面板中的 <strong>進階系統設置</strong></li>
-<li>點擊 <strong>環境變數</strong></li>
-<li>在 <strong>系統變數</strong> 找到 <strong>Path</strong> 並按下編輯</li>
-<li>新增你 <strong>Python 安裝的路徑</strong></li>
-</ol>
-</li>
-<li>
-<p>方法2 : 用 Python 安裝檔新增環境變數</p>
-<ol>
-<li>點擊 <strong>你的Python 安裝檔</strong></li>
-<li>點擊 <strong>modify</strong> 或 <strong>install</strong></li>
-<li>將 <strong>Add Python to PATH</strong> 打勾</li>
-<li>按下 <strong>install</strong> 跑完就好囉!</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>
-<p><code>Microsoft Visual C++ 14.0 is required</code></p>
-<blockquote>
-<p>原因1 : 你的 Visual C++ 版本不夠新</p>
-</blockquote>
-<ul>
-<li>
-<p>方法1 : 安裝 Visual C++ Redistributable Package</p>
-<ol>
-<li>Visual C++ Redistributable Package 14.0.25008 <a href="https://www.techspot.com/downloads/downloadnow/6776/?evp=ab20b3eff9233dce2d23bb505386cf4c&amp;file=1" rel="nofollow">(x64 / 64-bit)</a>  <a href="https://www.techspot.com/downloads/downloadnow/6776/?evp=ab20b3eff9233dce2d23bb505386cf4c&amp;file=2" rel="nofollow">(x86 / 32-bit)</a></li>
-</ol>
-<blockquote>
-<p>請根據你載的 Python (你載64位元就載64位元 依此類推)</p>
-</blockquote>
-</li>
-</ul>
-<blockquote>
-<p>原因2 : Python 安裝不全</p>
-</blockquote>
-<ul>
-<li>
-<p>方法1 : Python 砍掉重裝</p>
-<ol>
-<li>按下 <strong>Win</strong> <i></i> <strong>+ R</strong> 輸入並執行 <strong>control</strong></li>
-<li>點擊 <strong>程式集</strong> 下的 <strong>解除安裝程式</strong></li>
-<li>找到你的 <strong>Python</strong> 並<strong>解除安裝</strong></li>
-<li>按照<a href="#%E7%92%B0%E5%A2%83%E7%AF%87">環境篇</a>的安裝步驟重新安裝程式</li>
-<li>如果還是遇到同樣的問題 可以請教 <a href="https://www.google.com.tw/search?rlz=1C1CHZL_zh-TWTW736TW736&amp;ei=10umWvCFFMOz0ASh4Kq4Ag&amp;q=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&amp;oq=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&amp;gs_l=psy-ab.3..33i160k1.668.668.0.862.1.1.0.0.0.0.190.190.0j1.1.0....0...1.1.64.psy-ab..0.1.189....0.ayz9xPlUrbI" rel="nofollow">Google大神</a> 或是 <a href="https://www.facebook.com/messages/t/ShengFong.f/" rel="nofollow">助教</a></li>
-</ol>
-</li>
-</ul>
-</li>
-<li>
-<p><code>Traceback (most recent call last): File ~\appdata\local\programs\python\python36\lib\site-packages\pip\compat\__init__.py", line 75, in console_to_str return s.decode(sys.__stdout__.encoding) UnicodeDecodeError: 'utf-8' codec can't decode byte~</code></p>
-<blockquote>
-<p>原因 : Windows 系統編碼問題</p>
-</blockquote>
-<ul>
-<li>
-<p>方法1 :</p>
-<ol>
-<li>目錄中的 <strong>__init__.py</strong> 檔案打開</li>
-<li>搜尋 <code>sys.__stdout__.encoding</code></li>
-<li>將 <code>sys.__stdout__.encoding</code> 替代成 <code>ISO-8859-1</code></li>
-<li>再次安裝 <strong>jupyter</strong></li>
-</ol>
-<blockquote>
-<p>如果安裝完成之後 <strong>jupyter</strong> 沒辦法正常開啟</p>
-<p>請執行 <code>pip uninstall jupyter</code> 後再安裝一次</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>
-<p>其他問題</p>
-<ul>
-<li>
-<p>方法1 :</p>
-<ol>
-<li><a href="https://www.google.com/" rel="nofollow">Google</a></li>
-<li><a href="#">____</a></li>
-</ol>
-</li>
-<li>
-<p>方法2 :</p>
-<ol>
-<li>將錯誤的 <em>Traceback</em> 複製給 <a href="https://www.facebook.com/messages/t/ShengFong.f/" rel="nofollow">助教</a></li>
-<li>記得還有附上當時輸入的<strong>指令</strong>或<strong>狀況</strong></li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<h3><a id="user-content-mac-ver" class="anchor" aria-hidden="true" href="#mac-ver"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mac Ver</h3>
-<p>等待你的建立</p>
-<h3><a id="user-content-linux-ver" class="anchor" aria-hidden="true" href="#linux-ver"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Linux Ver</h3>
-<p>等待你的建立</p>
-<hr>
-<h2><a id="user-content-為您量身打造的健康檢查" class="anchor" aria-hidden="true" href="#為您量身打造的健康檢查"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>為您量身打造的健康檢查</h2>
-<p><a target="_blank" href="https://camo.githubusercontent.com/1e1282d6c30fa6db8036e747d21ec603c9b92b73/68747470733a2f2f692e696d6775722e636f6d2f5573647541654e2e706e67"><img src="https://camo.githubusercontent.com/1e1282d6c30fa6db8036e747d21ec603c9b92b73/68747470733a2f2f692e696d6775722e636f6d2f5573647541654e2e706e67" alt="你的健康檢查報告" title="你的健康檢查報告" data-canonical-src="https://i.imgur.com/UsduAeN.png" style="max-width:100%;"></a></p>
-</article>
-    </div>
-    <script src="assets/js/help-scroll.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="apple-touch-icon-precomposed" href="favicon.png">
+        <link rel="stylesheet" href="assets/css/github.css">
+        <title>Jerry大大的 Python 網頁製作課</title>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <div id="main">
+            <article class="markdown-body entry-content" itemprop="text">
+                <h1>
+                    <a id="user-content-jerry大大的-python-網頁製作課" class="anchor" aria-hidden="true" href="#jerry大大的-python-網頁製作課">
+                        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                        </svg>
+                    </a>
+                    Jerry大大的 Python 網頁製作課
+                </h1>
+                <h2>
+                    <a id="user-content-從-0-開始的-qa" class="anchor" aria-hidden="true" href="#從-0-開始的-qa">
+                        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                        </svg>
+                    </a>
+                    從 0 開始的 Q&amp;A
+                </h2>
+                <h3>
+                    <a id="user-content-環境篇" class="anchor" aria-hidden="true" href="#環境篇">
+                        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                        </svg>
+                    </a>
+                    環境篇
+                </h3>
+                <ol start="0">
+                    <li>
+                        <p>請問 Python 在哪下載並安裝? How to download and install Python?</p>
+                        <p><a href="https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe" rel="nofollow"><strong>Windows</strong></a> &lt;- 左鍵單擊</p>
+                        <p><a href="https://www.python.org/downloads/mac-osx/" rel="nofollow"><strong>Mac OS X</strong></a> &lt;- 左鍵單擊</p>
+                        <blockquote>
+                            <p>用執行檔安裝時 記得將 <strong>Add Python to PATH</strong> 打勾</p>
+                        </blockquote>
+                        <p><strong>Liunx</strong></p>
+                        <ul>
+                            <li>通常已經預載好了 usually pre-installed</li>
+                            <li><em>Ubuntu:</em> <code>sudo apt-get install python3.6</code> (Linux 大部分都是這個指令)</li>
+                            <li><em>Fedora:</em> <code>sudo yum install python3.6</code></li>
+                        </ul>
+                        <h4>
+                            <a id="user-content-安裝完之後-測試你的-python--test-your-python" class="anchor" aria-hidden="true" href="#安裝完之後-測試你的-python--test-your-python">
+                                <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                                </svg>
+                            </a>
+                            安裝完之後 測試你的 <strong>Python</strong>  Test your <strong>Python</strong>
+                        </h4>
+                        <p>在<strong>終端機(Terminal)</strong> 下 <code>python -V</code> 可以查看 Python 的版本有顯示 Python 之類的版本資訊表示安裝正確</p>
+                        <blockquote>
+                            <p>終端機(Terminal)開啟方式:</p>
+                            <blockquote>
+                                <p><strong>Windows</strong> : <strong>Win</strong> <i></i> <strong>+ R</strong> 輸入並執行 <strong>cmd</strong></p>
+                                <p><strong>Mac</strong> : <strong>CMD</strong> ⌘ <strong>+ Space</strong> 開啟 SpotLight Search 輸入並執行 <strong>Terminal</strong></p>
+                                <p><strong>Linux</strong> : <strong>Ctrl + Alt + T</strong></p>
+                            </blockquote>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <p>請問 <strong>jupyter</strong> 怎麼下載並安裝? How to download and install <strong>jupyer</strong>?</p>
+                        <p>在你的 <strong>終端機(Terminal)</strong> 中 執行 <code>pip install {package}</code> &lt;- 這裡的 <code>{package}</code> 就是 <code>jupyter</code></p>
+                        <p>最後有出現 <strong>Sucessful</strong> 的字樣並且可以繼續輸入指令就代表成功囉!</p>
+                    </li>
+                    <li>
+                        <p>請問我安裝好了 <strong>jupyter</strong> 之後要怎麼開啟呢?</p>
+                        <p>開啟你的終端機 輸入 <code>jupyter notebook</code> 就可以囉</p>
+                    </li>
+                </ol>
+                <hr>
+                <h2>
+                    <a id="user-content-從-0-開始的錯誤解決辦法" class="anchor" aria-hidden="true" href="#從-0-開始的錯誤解決辦法">
+                        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                        </svg>
+                    </a>
+                    從 0 開始的錯誤解決辦法
+                </h2>
+                <h3>
+                    <a id="user-content-windows-ver" class="anchor" aria-hidden="true" href="#windows-ver">
+                        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                        </svg>
+                    </a>
+                    Windows Ver
+                </h3>
+                <ol start="0">
+                    <li>
+                        <p><code>'Python' 不是內部或外部命令、可執行的程式或批次檔。</code></p>
+                        <blockquote>
+                            <p>原因 : <strong>環境變數(Environment Variables)</strong> 尚未設置</p>
+                        </blockquote>
+                        <ul>
+                            <li>
+                                <p>方法1 : 手動新增環境變數</p>
+                                <ol>
+                                    <li>右鍵單擊 <strong>我的電腦</strong> 或 <strong>本機</strong></li>
+                                    <li>點擊 <strong>內容</strong></li>
+                                    <li>單擊側面板中的 <strong>進階系統設置</strong></li>
+                                    <li>點擊 <strong>環境變數</strong></li>
+                                    <li>在 <strong>系統變數</strong> 找到 <strong>Path</strong> 並按下編輯</li>
+                                    <li>新增你 <strong>Python 安裝的路徑</strong></li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>方法2 : 用 Python 安裝檔新增環境變數</p>
+                                <ol>
+                                    <li>點擊 <strong>你的Python 安裝檔</strong></li>
+                                    <li>點擊 <strong>modify</strong> 或 <strong>install</strong></li>
+                                    <li>將 <strong>Add Python to PATH</strong> 打勾</li>
+                                    <li>按下 <strong>install</strong> 跑完就好囉!</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><code>Microsoft Visual C++ 14.0 is required</code></p>
+                        <blockquote>
+                            <p>原因1 : 你的 Visual C++ 版本不夠新</p>
+                        </blockquote>
+                        <ul>
+                            <li>
+                                <p>方法1 : 安裝 Visual C++ Redistributable Package</p>
+                                <ol>
+                                    <li>Visual C++ Redistributable Package 14.0.25008 <a href="https://www.techspot.com/downloads/downloadnow/6776/?evp=ab20b3eff9233dce2d23bb505386cf4c&amp;file=1" rel="nofollow">(x64 / 64-bit)</a>  <a href="https://www.techspot.com/downloads/downloadnow/6776/?evp=ab20b3eff9233dce2d23bb505386cf4c&amp;file=2" rel="nofollow">(x86 / 32-bit)</a></li>
+                                </ol>
+                                <blockquote>
+                                    <p>請根據你載的 Python (你載64位元就載64位元 依此類推)</p>
+                                </blockquote>
+                            </li>
+                        </ul>
+                        <blockquote>
+                            <p>原因2 : Python 安裝不全</p>
+                        </blockquote>
+                        <ul>
+                            <li>
+                                <p>方法1 : Python 砍掉重裝</p>
+                                <ol>
+                                    <li>按下 <strong>Win</strong> <i></i> <strong>+ R</strong> 輸入並執行 <strong>control</strong></li>
+                                    <li>點擊 <strong>程式集</strong> 下的 <strong>解除安裝程式</strong></li>
+                                    <li>找到你的 <strong>Python</strong> 並<strong>解除安裝</strong></li>
+                                    <li>按照<a href="#%E7%92%B0%E5%A2%83%E7%AF%87">環境篇</a>的安裝步驟重新安裝程式</li>
+                                    <li>如果還是遇到同樣的問題 可以請教 <a href="https://www.google.com.tw/search?rlz=1C1CHZL_zh-TWTW736TW736&amp;ei=10umWvCFFMOz0ASh4Kq4Ag&amp;q=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&amp;oq=Microsoft+Visual+C%2B%2B+14.0+is+required+python3&amp;gs_l=psy-ab.3..33i160k1.668.668.0.862.1.1.0.0.0.0.190.190.0j1.1.0....0...1.1.64.psy-ab..0.1.189....0.ayz9xPlUrbI" rel="nofollow">Google大神</a> 或是 <a href="https://www.facebook.com/messages/t/ShengFong.f/" rel="nofollow">助教</a></li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><code>Traceback (most recent call last): File ~\appdata\local\programs\python\python36\lib\site-packages\pip\compat\__init__.py", line 75, in console_to_str return s.decode(sys.__stdout__.encoding) UnicodeDecodeError: 'utf-8' codec can't decode byte~</code></p>
+                        <blockquote>
+                            <p>原因 : Windows 系統編碼問題</p>
+                        </blockquote>
+                        <ul>
+                            <li>
+                                <p>方法1 :</p>
+                                <ol>
+                                    <li>目錄中的 <strong>__init__.py</strong> 檔案打開</li>
+                                    <li>搜尋 <code>sys.__stdout__.encoding</code></li>
+                                    <li>將 <code>sys.__stdout__.encoding</code> 替代成 <code>ISO-8859-1</code></li>
+                                    <li>再次安裝 <strong>jupyter</strong></li>
+                                </ol>
+                                <blockquote>
+                                    <p>如果安裝完成之後 <strong>jupyter</strong> 沒辦法正常開啟</p>
+                                    <p>請執行 <code>pip uninstall jupyter</code> 後再安裝一次</p>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <ul>
+                    <li>
+                        <p>其他問題</p>
+                        <ul>
+                            <li>
+                                <p>方法1 :</p>
+                                <ol>
+                                    <li><a href="https://www.google.com/" rel="nofollow">Google</a></li>
+                                    <li><a href="#">____</a></li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>方法2 :</p>
+                                <ol>
+                                    <li>將錯誤的 <em>Traceback</em> 複製給 <a href="https://www.facebook.com/messages/t/ShengFong.f/" rel="nofollow">助教</a></li>
+                                    <li>記得還有附上當時輸入的<strong>指令</strong>或<strong>狀況</strong></li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>
+                    <a id="user-content-mac-ver" class="anchor" aria-hidden="true" href="#mac-ver">
+                        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                        </svg>
+                    </a>
+                    Mac Ver
+                </h3>
+                <p>等待你的建立</p>
+                <h3>
+                    <a id="user-content-linux-ver" class="anchor" aria-hidden="true" href="#linux-ver">
+                        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                        </svg>
+                    </a>
+                    Linux Ver
+                </h3>
+                <p>等待你的建立</p>
+                <hr>
+                <h2>
+                    <a id="user-content-為您量身打造的健康檢查" class="anchor" aria-hidden="true" href="#為您量身打造的健康檢查">
+                        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                        </svg>
+                    </a>
+                    為您量身打造的健康檢查
+                </h2>
+                <p><a target="_blank" href="https://camo.githubusercontent.com/1e1282d6c30fa6db8036e747d21ec603c9b92b73/68747470733a2f2f692e696d6775722e636f6d2f5573647541654e2e706e67"><img src="https://camo.githubusercontent.com/1e1282d6c30fa6db8036e747d21ec603c9b92b73/68747470733a2f2f692e696d6775722e636f6d2f5573647541654e2e706e67" alt="你的健康檢查報告" title="你的健康檢查報告" data-canonical-src="https://i.imgur.com/UsduAeN.png" style="max-width:100%;"></a></p>
+            </article>
+            <div class="footer">
+            	<ul>
+    				<li title="回到最上面"><a data-target="top" target="_self" href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></li>
+    				<li title="回到首頁"><a data-target="home" target="_self" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+    				<li title="回上頁"><a data-target="back" target="_self" href="#" onclick="history.go(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+    			</ul>
+            </div>
+        </div>
+        <script src="assets/js/help-gotop.js"></script>
+    </body>
 </html>
