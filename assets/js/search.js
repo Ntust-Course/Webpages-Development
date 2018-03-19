@@ -13,7 +13,7 @@ $("ul.menu > li:first-child > a").click(function() {
   	  		output += '\n';
   	  	}
   	  }
-  	  output = output.replace(/\SC/g,'成績');
+  	  output = output.replace(/\SC/g,'作業成績');
   	  alert(output);
   	});
   } catch(err) {
