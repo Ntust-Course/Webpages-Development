@@ -115,7 +115,7 @@ div.search-container > input[type=text] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    border-radius: 1vw;
+    border-radius: 2px;
 }
 
 div.search-container > button {
@@ -127,7 +127,7 @@ div.search-container > button {
     cursor: pointer;
     width: 80%;
     font-weight: bold;
-    border-radius: 1vw;
+    border-radius: 2px;
 }
 
 div.search-container > button:hover {
