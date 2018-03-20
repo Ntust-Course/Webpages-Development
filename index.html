@@ -1,32 +1,68 @@
 <!doctype html>
 <html lang="zh-tw">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="apple-touch-icon-precomposed" href="favicon.png">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <title>Jerry大大的 Python 網頁製作課</title>
-  </head>
-  <body oncontextmenu="return false" onselectstart="return false">
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false">
     <div id="main" class="index">
-    	<h1>Jerry大大的</h1>
+        <h1>Jerry大大的</h1>
         <img id="head" src="images/head.jpg" title="不要懷疑 這是Jerry">
-    	<h1>Python<br>網頁製作課</h1>
-    	<ul class="menu">
-    		<li title="作業查詢"><a data-target="search" target="_self" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-    		<li title="健康檢查"><a data-target="help" target="_self" href="help.html"><i class="fa fa-question" aria-hidden="true"></i></a></li>
-			<li title="加入我們"><a data-target="join" target="_self" href="javascript:alert('加入我們 comming soon...')"><i class="fa fa-sign-in"></i></a></li>
-    		<li title="救助我們"><a data-target="donate" target="_top" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X5T2UUPK6PUZ6"><i class="fa fa-dollar"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <h1>Python<br>網頁製作課</h1>
+        <ul class="menu">
+            <li title="作業查詢"><a data-target="search" target="_self" href="#" onclick="document.getElementById('search_form').style.display='block'"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li title="健康檢查"><a data-target="help" target="_self" href="help.html"><i class="fa fa-question" aria-hidden="true"></i></a></li>
+            <li title="加入我們"><a data-target="join" target="_self" href="javascript:alert('加入我們 comming soon...')"><i class="fa fa-sign-in"></i></a></li>
+            <li title="救助我們"><a data-target="donate" target="_top" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X5T2UUPK6PUZ6"><i class="fa fa-dollar"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="X5T2UUPK6PUZ6">
                 <input type="hidden" name="submit">
             </form></i></a></li>
-            
-    	</ul>
+
+        </ul>
     </div>
+    <div id="search_form" class="search">
+        <span onclick="document.getElementById('search_form').style.display='none'" class="close" title="關閉查詢">&times;</span>
+        <form class="search-content animate">
+            <div class="search-container">
+                <h3>你的作業查詢小助手</h3>
+                <p>助教不會寫程式 請不要操他<br>有問題請回報助教</p>
+                <label for="key"><b>你的學號</b></label>
+                <h4>師大台大生<br>EX: 校名B12345678</h4>
+                <input type="text" placeholder="台科生 EX: B12345678" name="key" required>
+                <button id="search" type="submit">查詢</button>
+            </div>
+        </form>
+
+    </div>
+    <div id="search_error" class="search">
+        <form class="search-content animate">
+        <div class="search-container">
+            <h3>找不到此學號<br>請稍後重試<br>真的不行請通知助教!</h3>
+        </div>
+    </form>
+    </div>
+    <script>
+        var search_form = document.getElementById('search_form');
+        var search_error = document.getElementById('search_error');
+        window.onclick = function(event) {
+            if (event.target == search_form) {
+                search_form.style.display = "none";
+            }
+            if (event.target == search_error) {
+                search_error.style.display = "none";
+            }
+        }
+    </script>
     <script src="assets/js/search.js"></script>
     <script src="assets/js/info.js"></script>
-  </body>
+</body>
+
 </html>

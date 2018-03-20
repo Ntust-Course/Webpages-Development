@@ -8,8 +8,12 @@ $("#head").on('mouseleave touchend', function() {
 
 $("li > a").on('mouseenter touchstart', function() {
   $(this).css('color', 'white');
-})
+});
 
 $("li > a").on('mouseleave touchend', function() {
   $(this).css('color', '#2f2f2f');
-})
+});
+/*
+$("#head").on("taphold", function( event ) {
+
+});*/
