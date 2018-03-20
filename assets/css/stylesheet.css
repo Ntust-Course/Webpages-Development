@@ -93,10 +93,6 @@ li a {
   color: #2f2f2f;
 }
 
-li a:active {
-  color: white;
-}
-
 ul li a i {
   font-family: 'fontawesome' !important;
 }
