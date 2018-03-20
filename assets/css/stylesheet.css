@@ -63,6 +63,7 @@ h1 {
   white-space: nowrap; /* 防止集拿棒形狀的螢幕 */
 }
 
+/* image of Jerry */
 img#head {
   width: 50%;
   height: auto;
@@ -71,6 +72,20 @@ img#head {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+/*
+img#head {
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  -transition: opacity 1s ease-in-out;
+}
+
+img#head.top:hover {
+  opacity: 0;
+}*/
+/* menu */
+
 ul {
   display: flex;
   flex-direction: row;
