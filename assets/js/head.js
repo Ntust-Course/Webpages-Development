@@ -1,14 +1,7 @@
-/*$().hover(function() {
-  $("#head").fadeOut(function() { 
-    $(this).on('load', function() { 
-    	$(this).fadeIn(); 
-    }); 
-    $(this).attr("src", "images/head2.jpg"); 
-  }); 
-})*/
+$("#head").on('mouseenter touchstart', function() {
+  $(this).attr("src","images/head2.jpg");
+})
 
-$("#head").mouseenter(function() {
-	$(this).attr("src","images/head2.jpg");
-}).mouseleave(function() {
-  $(this).attr("src","images/head.jpg")
-});
+$("#head").on('mouseleave touchend', function() {
+  $(this).attr("src","images/head.jpg");
+})
