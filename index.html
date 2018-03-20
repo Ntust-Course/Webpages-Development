@@ -12,7 +12,8 @@
 </head>
 
 <body oncontextmenu="return false" onselectstart="return false">
-    <div id="main" class="index">
+    <!-- Main -->
+    <div id="main">
         <h1>Jerry大大的</h1>
         <img id="head" src="images/head.jpg" title="不要懷疑 這是Jerry">
         <h1>Python<br>網頁製作課</h1>
@@ -28,6 +29,7 @@
 
         </ul>
     </div>
+    <!-- Search Form -->
     <div id="search_form" class="search">
         <span onclick="document.getElementById('search_form').style.display='none'" class="close" title="關閉查詢">&times;</span>
         <form class="search-content animate">
@@ -42,6 +44,7 @@
         </form>
 
     </div>
+    <!-- Serach Error -->
     <div id="search_error" class="search">
         <form class="search-content animate">
         <div class="search-container">
@@ -49,6 +52,7 @@
         </div>
     </form>
     </div>
+    <!-- Script -->
     <script>
         var search_form = document.getElementById('search_form');
         var search_error = document.getElementById('search_error');

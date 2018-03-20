@@ -21,8 +21,8 @@ body {
   /* 基本寬高 */
   width: 50vw;
   height: calc(1.75*50vw);
-  min-width: 320px;
-  min-height: calc(1.75 * 320px);
+  min-width: 300px;
+  min-height: calc(1.75 * 300px);
   max-width: calc(85vh / 1.75);
   max-height: 85vh;
   /* 漸層背景 */
@@ -40,8 +40,8 @@ body {
   border: 2px solid white;
   box-shadow: 0 0 0 10px rgba(0,0,0,0.9);
   color: white;
-  margin: 0 1vw 0 1vw;
-  border-radius: 2vw;
+  margin: 1vw 1vh 1vw 1vh;
+  border-radius: 10px;
   overflow: hidden; /* 怕有人的長寬比報幹差超多 */
 }
 
@@ -67,7 +67,8 @@ h1 {
 img#head {
   width: 50%;
   height: auto;
-  border: 5px solid white;
+  border: solid white;
+  border-width: 5px;
   border-radius: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
