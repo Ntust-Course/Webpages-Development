@@ -6,7 +6,6 @@ $("form.search-content").submit(function(e) {
     values[this.name] = $(this).val();
   });
   var key = values['key'];
-  // $("#search_form").css("display","none"); 隱藏全部
   var input = '<h3>你的作業查詢小助手</h3><p>助教不會寫程式 請不要操他<br>有問題請回報助教</p>';
   var url = 'https://script.google.com/macros/s/AKfycbwoyxrSc5dmqyZa-u2nd3F5FFXjw0_6DhqzTzgybUAe19UmFdU/exec?key=';
   $.getJSON(url + key, function(data) {

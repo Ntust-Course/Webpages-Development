@@ -18,26 +18,31 @@ body {
 }
 
 #main {
-  width: 50%;
+  /* 基本寬高 */
+  width: 50vw;
   height: calc(1.75*50vw);
   min-width: 320px;
-  min-height: calc(1.75*320px);
-  max-width: calc(90vh/1.75);
-  max-height: 90vh;
+  min-height: calc(1.75 * 320px);
+  max-width: calc(85vh / 1.75);
+  max-height: 85vh;
+  /* 漸層背景 */
   background: rgb(98,192,247); /* Old browsers */
   background: -moz-linear-gradient(-45deg, rgba(98,192,247,0.9) 0%, rgba(23,130,237,0.9) 51%, rgba(255,220,25,0.9) 52%, rgba(255,220,25,0.9) 52%, rgba(255,236,153,0.9) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, rgba(98,192,247,0.9) 0%,rgba(23,130,237,0.9) 51%,rgba(255,220,25,0.9) 52%,rgba(255,220,25,0.9) 52%,rgba(255,236,153,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, rgba(98,192,247,0.9) 0%,rgba(23,130,237,0.9) 51%,rgba(255,220,25,0.9) 52%,rgba(255,220,25,0.9) 52%,rgba(255,236,153,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62c0f7', endColorstr='#ffec99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  /*display: flex;*/
+  /* 對齊 */
+  /* display: flex; */
   justify-content: center; 
   align-items: center;
   flex-direction: column;
+  /* 外觀 */
   border: 2px solid white;
   box-shadow: 0 0 0 10px rgba(0,0,0,0.9);
   color: white;
-  margin: 0 2vw 0 2vw;
+  margin: 0 1vw 0 1vw;
   border-radius: 2vw;
+
   overflow-x:hidden;
   overflow-y:scroll;
   -webkit-overflow-scrolling: touch;
