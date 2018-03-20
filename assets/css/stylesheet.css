@@ -55,6 +55,7 @@ h1 {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   margin-top: 3vh;
   margin-bottom: 3vh;
+  white-space: nowrap;
 }
 
 img#head {
