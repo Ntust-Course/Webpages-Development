@@ -18,7 +18,7 @@ body {
 }
 
 #outer-health {
-  display: block;
+  display: inline-block;
   width: calc(3% + 40px);
   height: 5px;
   position: absolute;

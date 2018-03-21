@@ -1,6 +1,8 @@
 $("#head").on('mouseenter touchstart', function(e) {
   $(this).attr("src","images/head2.jpg");
   if (e.pageX != undefined) {
+
+    // 應該要寫在end 才不會出現太快
   	/* 扣血機制 */
   	var hp = Math.round($("div#inner-health").width() / $('div#inner-health').parent().width() * 100);
   	var hbar = $("div#inner-health");
@@ -30,13 +32,11 @@ $("#head").on('mouseenter touchstart', function(e) {
         $target.remove();
       });
   	} else {
-  		/* 沒寫了 */
+  		/* 沒血了 */
+      //跳成就
+      $("#boss").show();
   	}
   }
-
-  // Jerry 扣 1 D血量
-  // bar value -= 1
-  // jump -1 text beside mouse
 });
 
 $("#head").on('mouseleave touchend', function() {
