@@ -17,6 +17,30 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+#outer-health {
+  display: block;
+  width: calc(3% + 40px);
+  height: 5px;
+  position: absolute;
+  margin: calc(-107px + -4vw) auto;
+  background-color: #FFFFFF ;
+  border: 1px solid #000;
+}
+
+#inner-health {
+  height: 5px;
+  background-color: #00FF00;
+}
+
+#minus1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: red;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  position: absolute;
+  display: none;
+}
+
 #main {
   /* 基本寬高 */
   width: 50vw;
