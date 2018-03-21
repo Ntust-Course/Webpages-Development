@@ -19,7 +19,6 @@ $("#head").on('mouseenter touchstart', function(e) {
       var obj = "<div id=\"minus1\" class=\"" + cl + "\">-1</div>"
       var outer = $("div#outer-health");
       outer.after(obj);
-      console.log(obj);
       var $target = $("div." + cl);
       $target.css({
         left: e.pageX,
