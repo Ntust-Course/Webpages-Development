@@ -65,6 +65,7 @@ h1 {
 
 /* image of Jerry */
 img#head {
+  box-sizing: border-box;
   width: 50%;
   height: auto;
   border: solid white;
