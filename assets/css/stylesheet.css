@@ -67,11 +67,11 @@ h1 {
 img#head {
   width: 50%;
   height: auto;
-  border: solid white;
-  border-width: 5px;
   border-radius: 50%;
   -webkit-border-radius: 50%; 
-  -moz-border-radius: 50%; 
+  -moz-border-radius: 50%;
+  box-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
+  -webkit-box-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
   margin-top: 0px;
   margin-bottom: 0px;
 }
