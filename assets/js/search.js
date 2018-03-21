@@ -1,5 +1,6 @@
 $("form.search-content").submit(function(e) {
   event.preventDefault();
+  $("div.loader").show();
   var $inputs = $('form.search-content :input');
   var values = {};
   $inputs.each(function() {
@@ -17,11 +18,14 @@ $("form.search-content").submit(function(e) {
       }
     }
     output = output.replace(/\SC/g, '作業成績');
+
     $("div.search-container").children().hide(); 
     $("div.search-container").append("<p>"+ output + "</p>");
+    $("div.loader").hide();
   }).fail(function() {
-    console.log('error')
+    console.log('error id not found')
     $("#search_form").css("display","none");
     $('#search_error').show();
+    $("div.loader").hide();
   });
 });
