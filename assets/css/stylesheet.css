@@ -70,6 +70,10 @@ img#head {
   border: solid white;
   border-width: 5px;
   border-radius: 100%;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
 }
