@@ -15,6 +15,11 @@ $("#head").on('mouseenter touchstart', function(e) {
   	  } else if (hp <= 71) {
   	  	hbar.css("background-color", "#FFFF00");
   	  }
+      /* 音效播放 */
+      var sound = new Audio("sounds/hit.mp3");
+      sound.pause();
+      sound.currentTime = 0;
+      sound.play();
   	  /* 動畫顯示 */
       /* 創建物件 */
       var cl = 'a' + Math.floor((Math.random() * 100) + 1);
