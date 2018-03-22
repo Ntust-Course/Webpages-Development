@@ -24,7 +24,7 @@ $("#head").on('mouseenter touchstart', function(e) {
       var $target = $("div." + cl);
       $target.css({
         left: e.pageX,
-        top: e.pageY
+        top: e.pageY - 50
       });
       $target.show();
       $target.animate({ 'top': '-=70', 'opacity': 0}, "slow", function(){

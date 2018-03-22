@@ -22,7 +22,7 @@ body {
   width: calc(3% + 40px);
   height: 5px;
   position: absolute;
-  margin: calc(-107px + -4vw) auto; /* need fix on ie*/
+  margin: auto auto;
   left: calc(50% - (3% + 40px) / 2); /* fix on ios */
   background-color: #FFFFFF ;
   border: 1px solid #000;
