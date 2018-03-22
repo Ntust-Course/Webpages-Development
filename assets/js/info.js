@@ -7,7 +7,8 @@ $("#head").on('mouseenter touchstart', function(e) {
   	var hp = Math.round($("div#inner-health").width() / $('div#inner-health').parent().width() * 100);
   	var hbar = $("div#inner-health");
   	if (hp > 0) {
-  	  hbar.css("width","-=1%");
+      var sound = new Audio("sounds/hit.mp3"); /* 預載 */
+  	  hbar.css("width","-=10%");
   	  if (hp <= 21) {
   	  	hbar.css("background-color", "#FF0000");
   	  } else if (hp <= 51) {
@@ -16,7 +17,7 @@ $("#head").on('mouseenter touchstart', function(e) {
   	  	hbar.css("background-color", "#FFFF00");
   	  }
       /* 音效播放 */
-      var sound = new Audio("sounds/hit.mp3");
+
       sound.pause();
       sound.currentTime = 0;
       sound.play();
@@ -38,7 +39,11 @@ $("#head").on('mouseenter touchstart', function(e) {
   	} else {
   		/* 沒血了 */
       //跳成就
+      var sound_win = new Audio("sounds/sad.mp3");
       $("#boss").show();
+      sound_win.pause();
+      sound_win.currentTime = 0;
+      sound_win.play();
   	}
   }
 });
