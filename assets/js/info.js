@@ -1,4 +1,5 @@
 $("#head").on('mouseenter touchstart', function(e) {
+  var sound = new Audio("sounds/hit.mp3"); 
   $(this).attr("src","images/head2.jpg");
   if (e.pageX != undefined) {
 
@@ -7,7 +8,7 @@ $("#head").on('mouseenter touchstart', function(e) {
   	var hp = Math.round($("div#inner-health").width() / $('div#inner-health').parent().width() * 100);
   	var hbar = $("div#inner-health");
   	if (hp > 0) {
-      var sound = new Audio("sounds/hit.mp3"); /* 預載 */
+      
   	  hbar.css("width","-=10%");
   	  if (hp <= 21) {
   	  	hbar.css("background-color", "#FF0000");
