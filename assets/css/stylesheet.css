@@ -22,7 +22,9 @@ body {
   width: calc(3% + 40px);
   height: 5px;
   position: absolute;
-  margin: calc(-107px + -4vw) auto;
+  /*margin: calc(-107px + -4vw) auto;*/
+  margin: -50% auto;
+  left: calc(50% - (3% + 40px) / 2); /* fix on ios */
   background-color: #FFFFFF ;
   border: 1px solid #000;
 }
@@ -78,8 +80,8 @@ a:hover {
 }
 h1 {
   color: white;
-  font-size: calc(180% + 1vw);
-  letter-spacing: calc(2px + 0.5vw);
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
   text-align: center;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   margin-top: 3vh;
@@ -113,7 +115,7 @@ ul {
 
 ul li{
   list-style: none;
-  font-size: calc(200% + 1vw);
+  font-size: 2rem;
   
 }
 
@@ -173,7 +175,7 @@ div.search-container > button {
     border: none;
     cursor: pointer;
     width: 80%;
-    font-size: calc(0.5vw + 100%);
+    font-size: 1rem;
     font-weight: bold;
     font-family: 'Noto Sans TC', sans-serif;
     border-radius: 2px;
