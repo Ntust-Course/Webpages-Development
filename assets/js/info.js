@@ -27,8 +27,7 @@ $("#head").on('mouseenter touchstart', function(e) {
         top: e.pageY
       });
       $target.show();
-      $target.animate({ 'top': '-=50'}, 500, function(){
-      }).fadeOut(500, function() {
+      $target.animate({ 'top': '-=70', 'opacity': 0}, "slow", function(){
         $target.remove();
       });
   	} else {
