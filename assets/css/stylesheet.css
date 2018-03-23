@@ -128,11 +128,11 @@ ul li a i {
 }
 
 /* Search */
-div.search-container > h3 {
+form > div > h3 {
   margin: 0;
 }
 
-div.search-container > h4 {
+form > div > h4 {
   margin: 0;
   font-size: 12px;
 }
