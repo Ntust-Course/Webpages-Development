@@ -23,7 +23,7 @@ body {
   height: 5px;
   position: absolute;
   margin: auto auto;
-  margin-top: -0.7em;
+  margin-top: -0.75em;
   left: calc(50% - (3% + 40px) / 2); /* fix on ios */
   background-color: #FFFFFF ;
   border: 1px solid #000;
@@ -115,7 +115,7 @@ ul {
 
 ul li{
   list-style: none;
-  font-size: 2rem;
+  font-size: 3rem;
   
 }
 
