@@ -18,7 +18,9 @@ $("#head").on('mouseenter touchstart', function(e) {
   	  	hbar.css("background-color", "#FFFF00");
   	  }
       /* 音效播放 */
-
+      // 播放 blob object (?)
+      //local variable = audio blob
+      //local play
       sound.pause();
       sound.currentTime = 0;
       sound.play();
@@ -64,3 +66,10 @@ $("li > a").on('mouseleave touchend', function() {
 $("#head").on("taphold", function( event ) {
 
 });*/
+
+function load_audio () {
+
+      document.querySelector('button').onclick = function () {
+          audio.play();
+      };
+}

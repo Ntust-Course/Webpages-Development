@@ -67,6 +67,15 @@
                 search_error.style.display = "none";
             }
         }
+        /* Loading audio as blob
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'sounds/hit.mp3', true);
+        xhr.responseType = 'blob';
+        var audio = document.querySelector('audio');
+        xhr.onload = function () {
+          audio.src = URL.createObjectURL(xhr.response);  
+        };
+        xhr.send();*/
     </script>
     <script src="assets/js/search.js"></script>
     <script src="assets/js/info.js"></script>
