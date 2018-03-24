@@ -1,6 +1,4 @@
-.brand,
 .chat-icon,
-.button,
 .label {
     font-family: 'Noto Sans TC', sans-serif;
 }
@@ -22,13 +20,11 @@
     left: 0;
 }
 
-#container.left .launcher,
 #container.left .chat-icon {
     right: auto;
     left: 14px;
 }
 
-.launcher,
 .chat-icon {
     float: left;
     cursor: pointer;
@@ -49,87 +45,16 @@
     filter: alpha(opacity=0);
 }
 
-.button {
-    color: white;
-    border: 2px solid white;
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
-    display: block;
-    padding: 3px 6px;
-    padding: 0.2rem 0.4rem;
-    text-align: center;
-}
-
 .chat-icon img {
     height: 50px;
     width: 50px;
     display: inline-block;
 }
 
-.chat-icon.panel {
-    position: fixed;
-    width: 280px;
-    height: 280px;
-    right: 50% !important;
-    top: 50% !important;
-    margin-right: -140px;
-    margin-top: -140px;
-    z-index: 11;
-}
 
-#container.left .chat-icon.panel {
-    left: auto;
-}
-
-.chat-icon:not(.panel):hover {
+.chat-icon:hover {
     width: 150px;
     z-index: 12;
-}
-
-.qr {
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    filter: alpha(opacity=100);
-    margin: 40px;
-    border-radius: 5px;
-    visibility: visible;
-    background-size: contain;
-    -webkit-transition: visibility 0s linear 0.2s, opacity 0.2s linear 0.2s;
-    transition: visibility 0s linear 0.2s, opacity 0.2s linear 0.2s;
-}
-
-.chat-icon:not(.panel) .qr {
-    visibility: hidden;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-.launcher.launcher-active .brand {
-    visibility: visible;
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-.brand {
-    text-decoration: none;
-    position: absolute;
-    visibility: hidden;
-    font-weight: 500;
-    font-size: 11px;
-    bottom: -24px;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    border: 0;
-    right: 0px;
-    width: 90px;
-    text-align: right;
-    -webkit-transition: visibility 0s, opacity 0.5s linear 3s;
-    transition: visibility 0s, opacity 0.5s linear 3s;
 }
 
 .label {
@@ -157,160 +82,4 @@
 .chat-icon:hover > .label {
     opacity: 1;
     filter: alpha(opacity=100);
-}
-
-.chat-icon.panel > .label {
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-#overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.35);
-}
-
-#overlay .overlay-body {
-    position: absolute;
-    width: 600px;
-    height: 480px;
-    max-width: 100%;
-    max-height: 100%;
-    right: 50% !important;
-    top: 50% !important;
-    margin-right: -300px;
-    margin-top: -240px;
-    z-index: 11;
-    background-color: rgba(0, 0, 0, 0.65);
-    border-radius: 16px;
-    padding-top: 20px;
-}
-
-#overlay .qr {
-    display: none;
-}
-
-#overlay .qr.active {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    background-color: #222;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.overlay-chat-icon {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin: 24px;
-    border-radius: 16px;
-}
-
-
-/* Media Query */
-
-
-/* Click Effects */
-
-.launcher {
-    transition: color 0.7s;
-    -webkit-transition: color 0.7s;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-size: contain;
-}
-
-.effect:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -50px 0 0 -50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    content: '';
-    opacity: 0;
-    filter: alpha(opacity=0);
-    pointer-events: none;
-}
-
-.effect:before,
-.effect:after {
-    box-shadow: 0 0 0 2px rgba(111, 148, 182, 0.6);
-}
-
-.effect.show-effect:before {
-    -webkit-animation: effect-1 0.5s forwards;
-    animation: effect-1 0.5s forwards;
-}
-
-.effect.show-effect:after {
-    -webkit-animation: effect-2 0.5s forwards;
-    animation: effect-2 0.5s forwards;
-}
-
-@-webkit-keyframes effect-1 {
-    0% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        -webkit-transform: scale3d(0.5, 0.5, 1);
-        transform: scale3d(0.5, 0.5, 1);
-    }
-    100% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-transform: scale3d(1.1, 1.1, 1);
-        transform: scale3d(1.1, 1.1, 1);
-    }
-}
-
-@keyframes effect-1 {
-    0% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        -webkit-transform: scale3d(0.5, 0.5, 1);
-        transform: scale3d(0.5, 0.5, 1);
-    }
-    100% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-transform: scale3d(1.1, 1.1, 1);
-        transform: scale3d(1.1, 1.1, 1);
-    }
-}
-
-@-webkit-keyframes effect-2 {
-    0% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        -webkit-transform: scale3d(0.5, 0.5, 1);
-        transform: scale3d(0.5, 0.5, 1);
-    }
-    50%,
-    100% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-transform: scale3d(1.2, 1.2, 1);
-        transform: scale3d(1.2, 1.2, 1);
-    }
-}
-
-@keyframes effect-2 {
-    0% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        -webkit-transform: scale3d(0.5, 0.5, 1);
-        transform: scale3d(0.5, 0.5, 1);
-    }
-    50%,
-    100% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-transform: scale3d(1.2, 1.2, 1);
-        transform: scale3d(1.2, 1.2, 1);
-    }
 }
