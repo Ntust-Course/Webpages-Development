@@ -18,6 +18,7 @@ $("form.search-content").submit(function(e) {
       }
     }
     output = output.replace(/\SC/g, '作業成績');
+    output = output.replace(/\EX/g, '考試成績');
 
     $("div.search-container").children().hide(); 
     $("div.search-container").append("<p>"+ output + "</p>");

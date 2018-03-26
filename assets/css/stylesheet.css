@@ -137,15 +137,6 @@ form > div > h4 {
   font-size: 12px;
 }
 
-div.search-container > input[type=text] {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 2px;
-}
 /* Just a button */
 .btn {
   position: relative;
@@ -233,7 +224,7 @@ form.search-content {
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
-  width: 74%;
+  width: 75%;
   border:none;
   border-bottom:1px solid #757575;
 }
@@ -380,6 +371,7 @@ div.loader {
   -webkit-animation: spin 0.7s linear infinite; /* Safari */
   animation: spin 0.7s linear infinite;
   z-index: 2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 }
 
 /* Safari */
