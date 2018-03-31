@@ -371,7 +371,6 @@ div.loader {
   -webkit-animation: spin 0.7s linear infinite; /* Safari */
   animation: spin 0.7s linear infinite;
   z-index: 2;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 }
 
 /* Safari */
