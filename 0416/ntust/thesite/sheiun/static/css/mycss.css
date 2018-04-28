@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans TC';
+	color: #aaa;
+}
+
+html, body {
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table {
+	width: 100%;
+}
+
+.center {
+	text-align: center;
+}
