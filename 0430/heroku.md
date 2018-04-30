@@ -14,9 +14,9 @@
 | models changed | `python migrations` | `heroku run python migrations` | 
 | un/applying migrations | `python migrate` | `heroku run python migrations` | 
 
-#### 給沒用過 Git Command 的人
+### 給沒用過 Git Command 的人
 
-##### **常用** Command
+#### **常用** Command
 
 `git init`
 > 初始化這個目錄，讓 Git 對這個目錄開始進行版本控制
@@ -26,10 +26,9 @@
 
 *	 `git remote -v`
 	
-	> 列出連結
+> 列出連結
 
 *	 `git remote add [shortname] [url]`
-	
 	> 新增一個遠端倉庫 如: git remote add heroku https://git.heroku.com/pure-mountain-65066.git
 
 `git add [something]`
@@ -40,24 +39,21 @@
 > local index -> local repository
 
 *	 `git commit -m [message]`
-	
-	> 單行訊息的 commit
+	> 帶有單行訊息的 commit
 
 `git push`
 > local repository -> remote repository # 預設會 push 到 origin
 
 *	 `git push [remote-name] [branch-name]`
-	
 	> 如: git push origin master
 
 `git clone [url]`
 > 複製一份到 current_dir/repository_name 如: git clone https://git.heroku.com/pure-mountain-65066.git
 
 *	`git clone [url] [repo_name]`
-	
 	> 指定複製的目錄 git clone https://git.heroku.com/pure-mountain-65066.git mydir
 
-##### 不專業的 Git 講解
+#### 不專業的 Git 講解
 
 remote repository 簡單來說就是你的 Github 或 Heroku ...
 
