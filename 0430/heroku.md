@@ -16,24 +16,41 @@
 
 #### 給沒用過 Git Command 的人
 
-##### 常用 Command
+##### **常用** Command
 
 `git init`
 > 初始化這個目錄，讓 Git 對這個目錄開始進行版本控制
 
 `git remote`
-> 列出遠端版本控制倉庫
+> 列出遠端版本控制倉庫(repository)
 
 *	 `git remote -v`
-*	> 列出連結
-*	 `git remote add [shortname] [url]`
-*	> 新增一個遠端倉庫 如: git remote add heroku https://git.heroku.com/pure-mountain-65066.git
+	> 列出連結
 
-`git add`
+*	 `git remote add [shortname] [url]`
+	> 新增一個遠端倉庫 如: git remote add heroku https://git.heroku.com/pure-mountain-65066.git
+
+`git add [something]`
+> 新增一些東西到 local index 如: git add -A
+> -A 代表所有的檔案與 -all 和 . 相同
 
 `git commit`
+> local index -> local repository
+
+*	 `git commit -m [message]`
+	> 單行訊息的 commit
 
 `git push`
+> local repository -> remote repository # 預設會 push 到 origin
+
+*	 `git push [remote-name] [branch-name]`
+	> 如: git push origin master
+
+`git clone [url]`
+> 複製一份到 current_dir/repository_name 如: git clone https://git.heroku.com/pure-mountain-65066.git
+
+*	`git clone [url] [repo_name]`
+	> 指定複製的目錄 git clone https://git.heroku.com/pure-mountain-65066.git mydir
 
 ##### 不專業的 Git 講解
 
