@@ -2,7 +2,9 @@
 
 > 這些 Command Heroku 的網站上面都有，這裡只是單純整理幾個比較常用的
 
-`heroku create [app_name]` 這裡的 \[app_name\] 指的是 heroku 上的 app
+`heroku login`  就是登入
+
+`heroku create [app_name]` 建立一個APP 這裡的 \[app_name\] 指的是 heroku 上的 app
 
 
 #### 對比 Local 和 Heroku 的指令
