@@ -7,7 +7,7 @@
 
 #### 對比 Local 和 Heroku 的指令
 
-> 其實就只是多了 heroku run
+> 其實就只是多了 `heroku run`
 
 | Feature | Local | Heroku |
 |---|---|---|
@@ -24,11 +24,10 @@
 `git remote`
 > 列出遠端版本控制倉庫(repository)
 
-*	 `git remote -v`
-	
-> 列出連結
+*	`git remote -v`	
+	> 列出連結
 
-*	 `git remote add [shortname] [url]`
+*	`git remote add [shortname] [url]`
 	> 新增一個遠端倉庫 如: git remote add heroku https://git.heroku.com/pure-mountain-65066.git
 
 `git add [something]`
@@ -38,13 +37,13 @@
 `git commit`
 > local index -> local repository
 
-*	 `git commit -m [message]`
+*	`git commit -m [message]`
 	> 帶有單行訊息的 commit
 
 `git push`
 > local repository -> remote repository # 預設會 push 到 origin
 
-*	 `git push [remote-name] [branch-name]`
+*	`git push [remote-name] [branch-name]`
 	> 如: git push origin master
 
 `git clone [url]`
