@@ -24,9 +24,11 @@
 `git remote`
 > 列出遠端版本控制倉庫
 
-	* `git remote -v`
-	> 列出連結
-	* `git remote add [shortname] [url]`
+*	 `git remote -v`
+>	 列出連結
+
+*	 `git remote add [shortname] [url]`
+>	 新增一個遠端倉庫 如: git remote add heroku https://git.heroku.com/pure-mountain-65066.git
 
 `git add`
 
