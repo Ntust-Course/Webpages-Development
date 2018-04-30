@@ -25,3 +25,5 @@
 **如果你真的還是看不懂請服用以下網址**
 
 **MarkDown簡易教學** [**[中文版]**](http://markdown.tw/) [**[英文版]**](https://daringfireball.net/projects/markdown/syntax)
+
+[**Heroku我的簡易教學**](heroku.md)
