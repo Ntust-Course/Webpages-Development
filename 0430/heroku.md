@@ -54,12 +54,13 @@
 
 #### 不專業的 Git 講解
 
-remote repository 簡單來說就是你的 Github 或 Heroku ...
+remote repository 遠端倉庫(Github / Heroku)
 
-local repository 這裡是你 commit 之後資料被記錄的地方
+local repository 本地倉庫
 
-local index 這裡是你 add 之後的地方
+local index 本地索引
 
-workspace 簡單來說就是你的本機資料夾
+workspace 你的資料夾
 
+![](https://greenido.files.wordpress.com/2013/07/git-local-remote.png?w=696&h=570)
 ![](https://i.stack.imgur.com/m4L6s.jpg)
