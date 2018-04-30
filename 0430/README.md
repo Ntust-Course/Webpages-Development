@@ -26,4 +26,4 @@
 
 **MarkDown簡易教學** [**[中文版]**](http://markdown.tw/) [**[英文版]**](https://daringfireball.net/projects/markdown/syntax)
 
-[**Heroku我的簡易教學**](heroku.md)
+[**我的Heroku簡易教學**](heroku.md)

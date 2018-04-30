@@ -6,6 +6,13 @@
 
 `heroku create [app_name]` 建立一個APP 這裡的 \[app_name\] 指的是 heroku 上的 app
 
+`heroku ps` 執行 Procfile # 這是一個在你 workspace 根目錄會有的檔案
+
+`heroku ps:scale web=0` 將 web dynos 數量設為 0 # 不是很重要
+
+`heroku ps:scale web=1` 根上面差不多
+
+`heroku open` 開啟你的 heroku app
 
 #### 對比 Local 和 Heroku 的指令
 
