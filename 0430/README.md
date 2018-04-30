@@ -19,5 +19,6 @@
 ---
 
 ### P.S 只要完全照著 *使用範例* 檔名存成 *README.md* 就可以囉 >\_0
+### 一樓的網址純展示用 無法實際連線 :tada:
 
 **MarkDown簡易教學** [**[中文版]**](http://markdown.tw/) [**[英文版]**](https://daringfireball.net/projects/markdown/syntax)
