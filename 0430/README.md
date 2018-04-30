@@ -18,4 +18,6 @@
 
 ---
 
+## P.S 只要完全照著 使用範例打 檔名存成 README.md 就可以囉 >\_0
+
 **MarkDown簡易教學** [**[中文版]**](http://markdown.tw/) [**[英文版]**](https://daringfireball.net/projects/markdown/syntax)
