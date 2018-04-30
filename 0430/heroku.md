@@ -22,11 +22,17 @@
 ##### 簡易的講解 Git 
 
 remote repository 簡單來說就是你的 Github 或 Heroku ...
+
 git push ↑ git fetch ↓
+
 local repository 這裡是你 commit 之後資料被記錄的地方
+
 git commit ↑ 
+
 local index 這裡是你 add 之後的地方
+
 git add ↑
+
 workspace 簡單來說就是你的本機資料夾
 
 ![](https://i.stack.imgur.com/m4L6s.jpg)
