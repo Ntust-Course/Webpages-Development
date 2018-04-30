@@ -8,5 +8,5 @@
 
 | Feature | Local | Heroku |
 |---|---|---|
-| which is responsible for creating new migrations based on the changes you have made to your models. | python migrations | heroku run python migrations | 
-| which is responsible for applying and unapplying migrations. | python migrate | heroku run python migrations | 
+| models changed | python migrations | heroku run python migrations | 
+| un/applying migrations | python migrate | heroku run python migrations | 
