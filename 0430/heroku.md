@@ -6,7 +6,7 @@
 
 #### 對比 Local 和 Heroku 的指令
 
-| Local | Heroku |
-|---|---|
-| python migrations | heroku run python migrations | 
-| python migrate | heroku run python migrations | 
+| Feature | Local | Heroku |
+|---|---|---|
+| which is responsible for creating new migrations based on the changes you have made to your models. | python migrations | heroku run python migrations | 
+| which is responsible for applying and unapplying migrations. | python migrate | heroku run python migrations | 
