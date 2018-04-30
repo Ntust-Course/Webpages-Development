@@ -2,7 +2,7 @@
 
 > 這些 Command Heroku 的網站上面都有，這裡只是單純整理幾個比較常用的
 
-`heroku create <app_name>` 這裡的 <app_name> 指的是 heroku 上的 app
+`heroku create [app_name]` 這裡的 \[app_name\] 指的是 heroku 上的 app
 
 
 #### 對比 Local 和 Heroku 的指令
@@ -16,10 +16,25 @@
 
 #### 給沒用過 Git Command 的人
 
-`git add <something>` <something> 指的是檔案或資料夾
-> 範例 `git add .` 這行可以把全部的檔案都加入 local_
+##### 常用 Command
 
-##### 簡易的講解 Git 
+`git init`
+> 初始化這個目錄，讓 Git 對這個目錄開始進行版本控制
+
+`git remote`
+> 列出遠端版本控制倉庫
+
+	* `git remote -v`
+	> 列出連結
+	* `git remote add [shortname] [url]`
+
+`git add`
+
+`git commit`
+
+`git push`
+
+##### 不專業的 Git 講解
 
 remote repository 簡單來說就是你的 Github 或 Heroku ...
 
