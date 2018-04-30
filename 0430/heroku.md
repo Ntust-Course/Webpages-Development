@@ -28,17 +28,17 @@
 	> 列出連結
 
 *	`git remote add [shortname] [url]`
-	> 新增一個遠端倉庫 如: git remote add heroku https://git.heroku.com/pure-mountain-65066.git
+	> 新增一個遠端倉庫 如: `git remote add heroku https://git.heroku.com/pure-mountain-65066.git`
 
 `git add [something]`
-> 新增一些東西到 local index 如: git add -A
+> 新增一些東西到 local index 如: `git add -A`
 > -A 代表所有的檔案與 -all 和 . 相同
 
 `git commit`
 > local index -> local repository
 
 *	`git commit -m [message]`
-	> 帶有單行訊息的 commit
+	> 帶有單行訊息的 commit 如: `git commit -m "First commit"`
 
 `git push`
 > local repository -> remote repository # 預設會 push 到 origin
@@ -47,24 +47,18 @@
 	> 如: git push origin master
 
 `git clone [url]`
-> 複製一份到 current_dir/repository_name 如: git clone https://git.heroku.com/pure-mountain-65066.git
+> 複製一份到 current_dir/repository_name 如: `git clone https://git.heroku.com/pure-mountain-65066.git`
 
 *	`git clone [url] [repo_name]`
-	> 指定複製的目錄 git clone https://git.heroku.com/pure-mountain-65066.git mydir
+	> 指定複製的目錄 `git clone https://git.heroku.com/pure-mountain-65066.git mydir`
 
 #### 不專業的 Git 講解
 
 remote repository 簡單來說就是你的 Github 或 Heroku ...
 
-git push ↑ git fetch ↓
-
 local repository 這裡是你 commit 之後資料被記錄的地方
 
-git commit ↑ 
-
 local index 這裡是你 add 之後的地方
-
-git add ↑
 
 workspace 簡單來說就是你的本機資料夾
 
