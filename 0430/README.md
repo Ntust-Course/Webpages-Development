@@ -2,7 +2,7 @@
 
 **作業網址**: [每個禮拜都要改一堆作業QQ](https://pure-mountain-65066.herokuapp.com)
 
-**功能一**: [給媽媽的信但是只有助教會看](https://pure-mountain-65066.herokuapp.com/letter)
+**功能一**: [給媽媽的信但是只有助教會看](https://pure-mountain-65066.herokuapp.com/motherday)
 
 **功能二**: [只有助教會看的部落格](https://pure-mountain-65066.herokuapp.com/blog)
 
@@ -12,9 +12,9 @@
 
 \*\*作業網址\*\*: \[你的作業名稱(其實這個沒差)\]\(你的網址\)
 
-\*\*功能一\*\*: 給媽媽的信但是只有助教會看\(你的網址/你的給媽媽的信的APP\)
+\*\*功能一\*\*: 給媽媽的信但是只有助教會看\(你的網址/motherday\)
 
-\*\*功能二\*\*: 只有助教會看的部落格\(你的網址/你的沒人看的Blog的APP\)
+\*\*功能二\*\*: 只有助教會看的部落格\(你的網址/blog\)
 
 ---
 
